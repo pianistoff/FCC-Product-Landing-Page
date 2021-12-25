@@ -10,13 +10,14 @@
     width: 50%;
 }
 
-.nav-bar ul {
-    text-align: center;
-}
-
-.nav-link {
-    color: black;
-    text-decoration: none;
+.nav {
+    &-bar ul {
+        text-align: center;
+    }
+    &-link {
+        color: black;
+        text-decoration: none;
+    }
 }
 
 .item>img {
