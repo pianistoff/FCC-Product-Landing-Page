@@ -11,8 +11,11 @@
 }
 
 .nav {
-    &-bar ul {
-        text-align: center;
+    &-bar {
+        position: sticky;
+        ul {
+            text-align: center;
+        }
     }
     &-link {
         color: black;
@@ -38,4 +41,8 @@
         height: 100%;
         border: none;
     }
+}
+
+.footer {
+    border-top: 2px solid gold;
 }
