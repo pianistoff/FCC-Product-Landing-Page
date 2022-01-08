@@ -4,17 +4,19 @@
 }
 
 .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    max-width: 150px;
+    height: auto;
 }
 
 .nav {
     &-bar {
-        position: sticky;
         ul {
             text-align: center;
+            display: flex;
+            flex-direction: row;
+            >li {
+                list-style-type: none;
+            }
         }
     }
     &-link {
@@ -41,6 +43,13 @@
         height: 100%;
         border: none;
     }
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer {
