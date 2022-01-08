@@ -51,19 +51,41 @@
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.header a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.header #myLinks {
+  display: none;
 }
 
 .footer {
   border-top: 2px solid gold;
+}
+
+.active {
+  background-color: #04AA6D;
 }
 /*# sourceMappingURL=style.css.map */
