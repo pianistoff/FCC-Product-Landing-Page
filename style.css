@@ -38,6 +38,7 @@
   overflow: hidden;
   background-color: black;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -70,5 +71,9 @@
 .active {
   background-color: white;
   border-bottom: 2px solid gold;
+}
+
+.main {
+  margin-top: 118px;
 }
 /*# sourceMappingURL=style.css.map */
