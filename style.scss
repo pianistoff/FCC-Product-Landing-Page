@@ -36,7 +36,8 @@
 .header {
     overflow: hidden;
     background-color: black;
-    position: relative;
+    position: fixed;
+    width: 100%;
     #nav-bar {
         display: none;
     }
@@ -64,4 +65,8 @@
 .active {
     background-color: white;
     border-bottom: 2px solid gold;
+}
+
+.main {
+    margin-top: 118px;
 }
