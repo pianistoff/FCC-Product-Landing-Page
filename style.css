@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .logo {
@@ -78,5 +80,9 @@
 
 .main {
   margin-top: 118px;
+}
+
+.footer {
+  height: 118px;
 }
 /*# sourceMappingURL=style.css.map */

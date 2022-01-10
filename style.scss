@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -74,4 +75,8 @@
 
 .main {
     margin-top: 118px;
+}
+
+.footer {
+    height: 118px;
 }
