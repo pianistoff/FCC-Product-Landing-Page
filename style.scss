@@ -80,11 +80,32 @@
     height: 118px;
 }
 
-.first-item img {
-    height: 364.5px;
-    width: auto;
+.item {
+    margin: 0 auto;
+    width: fit-content;
+    h3 {
+        text-align: center;
+    }
+    .image-container {
+        width: fit-content;
+        margin: 0 auto;
+        img {
+            height: 364.5px;
+            width: auto;
+        }
+    }
+    .text-block {
+        border-left: 2px solid gold;
+        border-right: 2px solid gold;
+        text-align: center;
+        .price,
+        .year {
+            background-color: gold;
+        }
+    }
 }
 
-h3 {
-    text-align: center;
+.description {
+    margin: 0 auto;
+    width: fit-content;
 }
