@@ -61,11 +61,10 @@
             top: 0;
         }
     }
-}
-
-.nav-link:hover {
-    background-color: black;
-    color: white;
+    .nav-link:hover {
+        background-color: black;
+        color: white;
+    }
 }
 
 .active {
@@ -79,4 +78,13 @@
 
 .footer {
     height: 118px;
+}
+
+.first-item img {
+    height: 364.5px;
+    width: auto;
+}
+
+h3 {
+    text-align: center;
 }

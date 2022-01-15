@@ -12,61 +12,77 @@
 
 <body>
     <header class="header" id="header">
-        <a href="#header" class="active"><img src="./logo.png" id="header-img" alt="Company logo with a lantern depicted and &quot;ANTIQUE PARIS&quot; written underneath" class="logo"></a>
+        <a href="#main" class="active"><img src="./images/logo.png" id="header-img" alt="Company logo with a lantern depicted and &quot;ANTIQUE PARIS&quot; written underneath" class="logo"></a>
         <nav class="nav" id="nav-bar">
             <a href="#description" class="nav-link">Description</a>
             <a href="#video" class="nav-link">Video</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="menu()">
             <i class="fa fa-bars"></i>
         </a>
     </header>
-    <main class="main">
+    <main class="main" id="main">
         <div id="description" class="description">
             <div class="first-item item">
-                <img src="./a.jpg" alt="">
+                <h3>Puiforcat Cannes Five-Piece Place Setting</h3>
+                <div class="image-container">
+                    <img class="first-image" src="./images/cannes/1.jpg" alt="">
+                    <!-- <img class="second-image" src="./images/Cannes Five-Piece/PUI-50014_Cannes_2.jpg" alt="">
+                    <img class="third-image" src="./images/Cannes Five-Piece/PUI-50072_Cannes_2.jpg" alt="">
+                    <img class="fourth-image" src="./images/Cannes Five-Piece/PUI-50361_Cannes_2.jpg" alt="">
+                    <img class="fifth-image" src="./images/Cannes Five-Piece/PUI-50590_Cannes_2.jpg" alt="">
+                    <img class="sixth-image" src="./images/Cannes Five-Piece/PUI-50657_Cannes_2.jpg" alt="">  -->
+                </div>
+                <div class="buttons">
+                    <a href="javascript:void(0);" onclick="imageSwitchLeft(this)" "><i class="fa fa-angle-left "></i></a>
+                    <a href="javascript:void(0); " onclick="imageSwitchRight(this) "><i class="fa fa-angle-right "></i></a>
+                </div>
+                <p>Exquisitely fluted handles and ring detailing characterize this signature Puiforcat pattern. Renowned for the fine symmetry of its design and the solid, perfect balance of its forms, this collection was chosen by Jean Puiforcat for his
+                    own wedding.
+                </p>
+                <p>Sterling silver. Includes dinner fork, dinner knife, dessert spoon, salad fork and tea spoon.</p>
+                <p>$2,875.00</p>
+            </div>
+            <div class="second-item item ">
+                <img src="./b.jpg " alt=" ">
                 <p></p>
             </div>
-            <div class="second-item item">
-                <img src="./b.jpg" alt="">
+            <div class="third-item item ">
+                <img src="./c.jpg " alt=" ">
                 <p></p>
             </div>
-            <div class="third-item item">
-                <img src="./c.jpg" alt="">
+            <div class="fourth-item item ">
+                <img src="./d.jpg " alt=" ">
                 <p></p>
             </div>
-            <div class="fourth-item item">
-                <img src="./d.jpg" alt="">
-                <p></p>
-            </div>
-            <div class="fifth-item item">
-                <img src="./e.jpg" alt="">
+            <div class="fifth-item item ">
+                <img src="./e.jpg " alt=" ">
                 <p></p>
             </div>
         </div>
-        <div class="video">
-            <div class="videowrapper">
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dDfYfJeRNHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video ">
+            <div class="videowrapper ">
+                <iframe id="video " width="560 " height="315 " src="https://www.youtube.com/embed/dDfYfJeRNHI " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
             </div>
         </div>
-        <div id="contact" class="contact">
-            <form action="https://www.freecodecamp.com/email-submit" id="form">
-                <input name="email" type="email" id="email" placeholder="Enter your email" required>
-                <input id="submit" type="submit" value="Email me!" class="btn">
+        <div id="contact " class="contact ">
+            <form action="https://www.freecodecamp.com/email-submit " id="form ">
+                <input name="email " type="email " id="email " placeholder="Enter your email " required>
+                <input id="submit " type="submit " value="Email me! " class="btn ">
             </form>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer ">
         <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="# ">Privacy</a></li>
+            <li><a href="# ">Terms</a></li>
+            <li><a href="# ">Contact</a></li>
         </ul>
         <span>Copyright 2022, PARIS</span>
     </footer>
-    <script src="./app.js"></script>
-    <!--  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="./script.js "></script>
+    <!--  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js "></script> -->
 </body>
 
 </html>
