@@ -87,10 +87,18 @@
         text-align: center;
     }
     .image-container {
-        width: fit-content;
+        max-width: 100%;
         margin: 0 auto;
-        img {
-            height: 364.5px;
+        .item-image {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+    .buttons {
+        margin: 0 auto;
+        width: fit-content;
+        .arrow {
+            height: 30px;
             width: auto;
         }
     }

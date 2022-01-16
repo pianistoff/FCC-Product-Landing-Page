@@ -98,14 +98,24 @@
 }
 
 .item .image-container {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 100%;
   margin: 0 auto;
 }
 
-.item .image-container img {
-  height: 364.5px;
+.item .image-container .item-image {
+  height: auto;
+  max-width: 100%;
+}
+
+.item .buttons {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.item .buttons .arrow {
+  height: 30px;
   width: auto;
 }
 
