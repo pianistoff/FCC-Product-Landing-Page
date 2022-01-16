@@ -98,12 +98,22 @@
 }
 
 .item .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 0 auto;
+  height: 400px;
 }
 
 .item .image-container .item-image {
-  height: auto;
+  max-height: 400px;
   max-width: 100%;
 }
 
