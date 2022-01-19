@@ -32,10 +32,6 @@
   border: none;
 }
 
-.footer {
-  border-top: 2px solid gold;
-}
-
 .header {
   overflow: hidden;
   background-color: white;
@@ -80,10 +76,6 @@
 
 .main {
   margin-top: 118px;
-}
-
-.footer {
-  height: 118px;
 }
 
 .item {
@@ -145,5 +137,54 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.footer {
+  height: 118px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  background-color: white;
+  border-top: 2px solid gold;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 283.25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer p {
+  padding: 5px;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

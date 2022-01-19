@@ -40,3 +40,5 @@ function imageSwitchRight(element) {
         image.setAttribute('src', newUrl);
     }
 }
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
