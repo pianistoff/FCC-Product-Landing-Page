@@ -75,6 +75,7 @@
 .item {
     margin: 0 auto;
     width: fit-content;
+    padding: 10px;
     h3 {
         text-align: center;
     }
@@ -144,6 +145,7 @@
 }
 
 .contact {
+    padding: 10px;
     h2 {
         text-align: center;
     }
@@ -158,4 +160,8 @@
             border: 2px solid gold;
         }
     }
+}
+
+.video {
+    padding: 10px;
 }

@@ -83,6 +83,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding: 10px;
 }
 
 .item h3 {
@@ -188,6 +189,10 @@
   background-color: white;
 }
 
+.contact {
+  padding: 10px;
+}
+
 .contact h2 {
   text-align: center;
 }
@@ -209,5 +214,9 @@
 
 .contact form .email {
   border: 2px solid gold;
+}
+
+.video {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
