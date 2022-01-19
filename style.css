@@ -187,4 +187,27 @@
   padding: 5px;
   background-color: white;
 }
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact form .btn {
+  background-color: gold;
+  border: none;
+}
+
+.contact form .email {
+  border: 2px solid gold;
+}
 /*# sourceMappingURL=style.css.map */

@@ -142,3 +142,20 @@
         background-color: white;
     }
 }
+
+.contact {
+    h2 {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        .btn {
+            background-color: gold;
+            border: none;
+        }
+        .email {
+            border: 2px solid gold;
+        }
+    }
+}
