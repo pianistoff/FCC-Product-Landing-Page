@@ -125,7 +125,6 @@
 .item .text-block {
   border-left: 2px solid gold;
   border-right: 2px solid gold;
-  text-align: center;
 }
 
 .item .text-block .price,
@@ -210,10 +209,12 @@
 .contact form .btn {
   background-color: gold;
   border: none;
+  height: 30px;
 }
 
 .contact form .email {
   border: 2px solid gold;
+  height: 30px;
 }
 
 .video {

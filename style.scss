@@ -102,7 +102,6 @@
     .text-block {
         border-left: 2px solid gold;
         border-right: 2px solid gold;
-        text-align: center;
         .price,
         .year {
             background-color: gold;
@@ -155,9 +154,11 @@
         .btn {
             background-color: gold;
             border: none;
+            height: 30px;
         }
         .email {
             border: 2px solid gold;
+            height: 30px;
         }
     }
 }
