@@ -12,7 +12,8 @@ body {
 
 .logo {
     max-width: 150px;
-    height: auto;
+    height: 60px;
+    width: auto;
 }
 
 .item>img {
@@ -126,7 +127,7 @@ body {
 }
 
 .footer {
-    height: 118px;
+    height: 95px;
     display: flex;
     flex-direction: column;
     justify-content: center;
