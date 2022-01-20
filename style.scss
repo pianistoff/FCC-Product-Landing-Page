@@ -155,6 +155,9 @@
             background-color: gold;
             border: none;
             height: 30px;
+            &:focus {
+                border: none;
+            }
         }
         .email {
             border: 2px solid gold;
