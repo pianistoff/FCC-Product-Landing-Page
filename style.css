@@ -111,6 +111,7 @@ body {
   width: fit-content;
   margin: 0 auto;
   height: 400px;
+  position: relative;
 }
 
 .item .image-container .item-image {
@@ -143,6 +144,15 @@ body {
 .item .text-block .year {
   background-color: gold;
   text-align: center;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  width: 100px;
+  height: 100px;
 }
 
 .description {
@@ -237,5 +247,18 @@ body {
 
 .video {
   padding: 10px;
+}
+
+.toggle {
+  position: absolute;
+  left: -99em;
+}
+
+.toggle:not(:checked) + a {
+  color: blue;
+}
+
+.toggle:checked + a {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
