@@ -111,8 +111,9 @@ function zoomOut() {
     }
  }
 
-function checkAdress() {
-    if (document.getElementById("t1").checked) {
+function glassSwitch(element) {
+    const toggle = element.parentElement.querySelector('.toggle')
+    if (toggle.checked) {
         return zoomOut();
     } else {
         return magnify("myimage", 3, false);

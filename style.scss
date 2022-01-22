@@ -76,7 +76,7 @@ body {
 }
 
 .main {
-    margin-top: 118px;
+    margin-top: 95px;
 }
 
 .item {
@@ -103,7 +103,7 @@ body {
     .buttons {
         margin: 0 auto;
         width: fit-content;
-        .arrow {
+        .button {
             height: 30px;
             width: auto;
         }
@@ -196,12 +196,4 @@ body {
 .toggle {
     position: absolute;
     left: -99em;
-  }
-  
-  .toggle:not(:checked) + a {
-    color: blue;
-  }
-  
-  .toggle:checked + a {
-    color: red;
-  }
+}

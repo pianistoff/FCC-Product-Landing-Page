@@ -126,7 +126,7 @@ body {
   width: fit-content;
 }
 
-.item .buttons .arrow {
+.item .buttons .button {
   height: 30px;
   width: auto;
 }
@@ -252,13 +252,5 @@ body {
 .toggle {
   position: absolute;
   left: -99em;
-}
-
-.toggle:not(:checked) + a {
-  color: blue;
-}
-
-.toggle:checked + a {
-  color: red;
 }
 /*# sourceMappingURL=style.css.map */
