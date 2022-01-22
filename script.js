@@ -43,9 +43,8 @@ function imageSwitchRight(element) {
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-function magnify(imgID, zoom) {
+function magnify(img, zoom) {
     var img, glass, w, h, bw;
-    img = document.getElementById(imgID);
 
     /* Create magnifier glass: */
     glass = document.createElement("DIV");
@@ -104,18 +103,15 @@ function magnify(imgID, zoom) {
     }
 }
 
-function zoomOut() {
-    var zooms = document.querySelectorAll(".img-magnifier-glass");
-    for(var x=0;x<zooms.length;x++) {
-       zooms[x].parentNode.removeChild(zooms[x]);
-    }
+function zoomOut(zoom) {
+    zoom.parentNode.removeChild(zoom);
  }
 
 function glassSwitch(element) {
     const toggle = element.parentElement.querySelector('.toggle')
     if (toggle.checked) {
-        return zoomOut();
+        return zoomOut(element.parentElement.parentElement.querySelector('.img-magnifier-glass'));
     } else {
-        return magnify("myimage", 3, false);
+        return magnify(element.parentElement.parentElement.querySelector('.item-image'), 3);
     }
 }
