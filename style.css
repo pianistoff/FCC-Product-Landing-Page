@@ -124,11 +124,16 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding-left: 28.75px;
 }
 
 .item .buttons .button {
   height: 30px;
   width: auto;
+}
+
+.item .buttons .glass {
+  margin-left: 5px;
 }
 
 .item .text-block {

@@ -103,9 +103,13 @@ body {
     .buttons {
         margin: 0 auto;
         width: fit-content;
+        padding-left: 28.75px;
         .button {
             height: 30px;
             width: auto;
+        }
+        .glass {
+            margin-left: 5px;
         }
     }
     .text-block {
