@@ -69,49 +69,53 @@ function magnify(img, zoom) {
     glass.addEventListener("touchmove", moveMagnifier);
     img.addEventListener("touchmove", moveMagnifier);
     function moveMagnifier(e) {
-    var pos, x, y;
-    /* Prevent any other actions that may occur when moving over the image */
-    e.preventDefault();
-    /* Get the cursor's x and y positions: */
-    pos = getCursorPos(e);
-    x = pos.x;
-    y = pos.y;
-    /* Prevent the magnifier glass from being positioned outside the image: */
-    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
-    if (x < w / zoom) {x = w / zoom;}
-    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
-    if (y < h / zoom) {y = h / zoom;}
-    /* Set the position of the magnifier glass: */
-    glass.style.left = (x - w) + "px";
-    glass.style.top = (y - h) + "px";
-    /* Display what the magnifier glass "sees": */
-    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-    }
+        var pos, x, y;
+        /* Prevent any other actions that may occur when moving over the image */
+        e.preventDefault();
+        /* Get the cursor's x and y positions: */
+        pos = getCursorPos(e);
+        x = pos.x;
+        y = pos.y;
+        /* Prevent the magnifier glass from being positioned outside the image: */
+        if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+        if (x < w / zoom) {x = w / zoom;}
+        if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+        if (y < h / zoom) {y = h / zoom;}
+        /* Set the position of the magnifier glass: */
+        glass.style.left = (x - w) + "px";
+        glass.style.top = (y - h) + "px";
+        /* Display what the magnifier glass "sees": */
+        glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+        }
 
     function getCursorPos(e) {
-    var a, x = 0, y = 0;
-    e = e || window.event;
-    /* Get the x and y positions of the image: */
-    a = img.getBoundingClientRect();
-    /* Calculate the cursor's x and y coordinates, relative to the image: */
-    x = e.pageX - a.left;
-    y = e.pageY - a.top;
-    /* Consider any page scrolling: */
-    x = x - window.pageXOffset;
-    y = y - window.pageYOffset;
-    return {x : x, y : y};
-    }
+        var a, x = 0, y = 0;
+        e = e || window.event;
+        /* Get the x and y positions of the image: */
+        a = img.getBoundingClientRect();
+        /* Calculate the cursor's x and y coordinates, relative to the image: */
+        x = e.pageX - a.left;
+        y = e.pageY - a.top;
+        /* Consider any page scrolling: */
+        x = x - window.pageXOffset;
+        y = y - window.pageYOffset;
+        return {x : x, y : y};
+        }
 }
 
-function zoomOut(zoom) {
+function zoomOut(element) {
+    const zoom = element.parentElement.parentElement.querySelector('.img-magnifier-glass')
+    if (zoom) {
     zoom.parentNode.removeChild(zoom);
+    }
  }
 
 function glassSwitch(element) {
-    const toggle = element.parentElement.querySelector('.toggle')
+    const toggle = element.parentElement.querySelector('.toggle');
+    const image = element.parentElement.parentElement.querySelector('.item-image');
     if (toggle.checked) {
-        return zoomOut(element.parentElement.parentElement.querySelector('.img-magnifier-glass'));
+        return zoomOut(element);
     } else {
-        return magnify(element.parentElement.parentElement.querySelector('.item-image'), 3);
+        return magnify(image, 3);
     }
 }

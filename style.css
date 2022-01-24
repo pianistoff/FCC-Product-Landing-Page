@@ -99,12 +99,6 @@ body {
 }
 
 .item .image-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   max-width: 100%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -112,6 +106,12 @@ body {
   margin: 0 auto;
   height: 400px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .item .image-container .item-image {
@@ -134,6 +134,10 @@ body {
 
 .item .buttons .glass {
   margin-left: 5px;
+}
+
+.item .buttons .glass:hover {
+  cursor: pointer;
 }
 
 .item .text-block {

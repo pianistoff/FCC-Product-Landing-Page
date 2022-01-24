@@ -88,13 +88,13 @@ body {
         font-size: 23px;
     }
     .image-container {
-        display: flex;
-        align-items: flex-end;
         max-width: 100%;
         width: fit-content;
         margin: 0 auto;
         height: 400px;
         position: relative;
+        display: flex;
+        align-items: flex-end;
         .item-image {
             max-height: 400px;
             max-width: 100%;
@@ -110,6 +110,9 @@ body {
         }
         .glass {
             margin-left: 5px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     .text-block {
