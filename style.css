@@ -62,13 +62,22 @@ body {
   text-align: center;
 }
 
-.header a.icon {
+.header a.menu-btn {
   background: black;
   color: white;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.header a.menu-btn_burger {
+  width: 50px;
+  height: 6px;
+  background: white;
+  border-radius: 5px;
+  -webkit-transition: all 500s ease-in-out;
+  transition: all 500s ease-in-out;
 }
 
 .header .nav-link:hover {

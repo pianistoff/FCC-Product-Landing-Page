@@ -55,13 +55,20 @@ body {
         font-size: 17px;
         display: block;
         text-align: center;
-        &.icon {
+        &.menu-btn {
             background: black;
             color: white;
             display: block;
             position: absolute;
             right: 0;
             top: 0;
+            &_burger {
+                width: 50px;
+                height: 6px;
+                background: white;
+                border-radius: 5px;
+                transition: all 500s ease-in-out;
+            }
         }
     }
     .nav-link:hover {
