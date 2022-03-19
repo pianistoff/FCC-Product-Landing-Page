@@ -43,7 +43,7 @@ function imageSwitchRight(element) {
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-function magnify(img) {
+function magnifyOn(img) {
     var img, glass, w, h, bw, zoom;
 
     /* Create magnifier glass: */
@@ -115,22 +115,22 @@ function magnify(img) {
     }
 }
 
-function zoomOut(element) {
-    const zoom = element.parentElement.parentElement.querySelector(
+function magnifyOff(button) {
+    const glass = button.parentElement.parentElement.querySelector(
         ".img-magnifier-glass"
     );
-    if (zoom) {
-        zoom.parentNode.removeChild(zoom);
+    if (glass) {
+        glass.parentNode.removeChild(glass);
     }
 }
 
-function glassSwitch(element) {
-    const toggle = element.parentElement.querySelector(".toggle");
+function magnifySwitch(button) {
+    const toggle = button.parentElement.querySelector(".toggle");
     const image =
-        element.parentElement.parentElement.querySelector(".item-image");
+        button.parentElement.parentElement.querySelector(".item-image");
     if (toggle.checked) {
-        return zoomOut(element);
+        return magnifyOff(button);
     } else {
-        return magnify(image);
+        return magnifyOn(image);
     }
 }
