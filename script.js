@@ -90,8 +90,9 @@ function magnify(img) {
             y = h / zoom;
         }
         /* Set the position of the magnifier glass: */
+        const distanceFromContainer = img.parentElement.getBoundingClientRect().top - img.getBoundingClientRect().top;
         glass.style.left = x - w + "px";
-        glass.style.top = y - h + "px";
+        glass.style.top = y - distanceFromContainer - h + "px";
         /* Display what the magnifier glass "sees": */
         glass.style.backgroundPosition =
             "-" + (x * zoom - w + bw) + "px -" + (y * zoom - h + bw) + "px";
