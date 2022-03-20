@@ -129,8 +129,19 @@ function magnifySwitch(button) {
     const image =
         button.parentElement.parentElement.querySelector(".item-image");
     if (toggle.checked) {
-        return magnifyOff(button);
+        magnifyOff(button);
     } else {
-        return magnifyOn(image);
+        magnifyOn(image);
+    }
+}
+
+function arrowMagnifyOff(button) {
+    const glass = button.parentElement.parentElement.querySelector(
+        ".img-magnifier-glass"
+    );
+    const toggle = button.parentElement.querySelector(".toggle");
+    if (glass) {
+        glass.parentNode.removeChild(glass);
+        toggle.click();
     }
 }
