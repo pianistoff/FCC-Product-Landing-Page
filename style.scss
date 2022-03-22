@@ -46,41 +46,61 @@ body {
     top: 0;
     width: 100%;
     z-index: 1;
-    #nav-bar {
-        display: none;
-    }
-    a {
+    a.active {
         color: black;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
         display: block;
         text-align: center;
-        &.menu-btn {
-            background: black;
-            color: white;
+        background-color: white;
+        border-bottom: 2px solid gold;
+    }
+    .nav-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        .burger {
             display: block;
+            position: relative;
+        }
+        .burger,
+        .burger::before,
+        .burger::after {
+            width: 2em;
+            height: 3px;
+            background-color: #000;
+            transition: transform 350ms ease-in-out, opacity 200ms linear;
+        }
+        .burger::before,
+        .burger::after {
+            content: '';
             position: absolute;
-            right: 0;
-            top: 0;
-            &_burger {
-                width: 50px;
-                height: 6px;
-                background: white;
-                border-radius: 5px;
-                transition: all 500s ease-in-out;
-            }
+        }
+        .burger::before {
+            top: 6px;
+        }
+        .burger::after {
+            bottom: 6px;
         }
     }
-    .nav-link:hover {
-        background-color: black;
-        color: white;
+    .nav-link {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-align: center;
+        &:hover {
+            background-color: black;
+            color: white;
+        }
     }
 }
 
-.active {
-    background-color: white;
-    border-bottom: 2px solid gold;
+.nav {
+    display: none;
 }
 
 .main {
@@ -212,4 +232,20 @@ body {
 .toggle {
     position: absolute;
     left: -99em;
+}
+
+.open-nav {
+    display: block;
+}
+
+.open-toggle {
+    .burger {
+        transform: rotate(45deg);
+    }
+    .burger::before {
+        opacity: 0;
+    }
+    .burger::after {
+        transform: rotate(90deg) translate(6px);
+    }
 }

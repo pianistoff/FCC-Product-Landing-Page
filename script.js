@@ -1,11 +1,9 @@
-function menu() {
-    const x = document.getElementById("nav-bar");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+const navToggle = document.querySelector('.nav-toggle');
+function menuToggle() {
+    document.querySelector('.nav').classList.toggle('open-nav');
+    navToggle.classList.toggle('open-toggle');
 }
+navToggle.addEventListener('click', menuToggle);
 
 function imageSwitchLeft(element) {
     const item = element.parentElement.parentElement;

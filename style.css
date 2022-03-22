@@ -50,11 +50,56 @@ body {
   z-index: 1;
 }
 
-.header #nav-bar {
-  display: none;
+.header a.active {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+  background-color: white;
+  border-bottom: 2px solid gold;
 }
 
-.header a {
+.header .nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.header .nav-toggle .burger {
+  display: block;
+  position: relative;
+}
+
+.header .nav-toggle .burger,
+.header .nav-toggle .burger::before,
+.header .nav-toggle .burger::after {
+  width: 2em;
+  height: 3px;
+  background-color: #000;
+  -webkit-transition: opacity 200ms linear, -webkit-transform 350ms ease-in-out;
+  transition: opacity 200ms linear, -webkit-transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out, opacity 200ms linear;
+  transition: transform 350ms ease-in-out, opacity 200ms linear, -webkit-transform 350ms ease-in-out;
+}
+
+.header .nav-toggle .burger::before,
+.header .nav-toggle .burger::after {
+  content: '';
+  position: absolute;
+}
+
+.header .nav-toggle .burger::before {
+  top: 6px;
+}
+
+.header .nav-toggle .burger::after {
+  bottom: 6px;
+}
+
+.header .nav-link {
   color: black;
   padding: 14px 16px;
   text-decoration: none;
@@ -63,32 +108,13 @@ body {
   text-align: center;
 }
 
-.header a.menu-btn {
-  background: black;
-  color: white;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.header a.menu-btn_burger {
-  width: 50px;
-  height: 6px;
-  background: white;
-  border-radius: 5px;
-  -webkit-transition: all 500s ease-in-out;
-  transition: all 500s ease-in-out;
-}
-
 .header .nav-link:hover {
   background-color: black;
   color: white;
 }
 
-.active {
-  background-color: white;
-  border-bottom: 2px solid gold;
+.nav {
+  display: none;
 }
 
 .main {
@@ -272,5 +298,23 @@ body {
 .toggle {
   position: absolute;
   left: -99em;
+}
+
+.open-nav {
+  display: block;
+}
+
+.open-toggle .burger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.open-toggle .burger::before {
+  opacity: 0;
+}
+
+.open-toggle .burger::after {
+  -webkit-transform: rotate(90deg) translate(6px);
+          transform: rotate(90deg) translate(6px);
 }
 /*# sourceMappingURL=style.css.map */
