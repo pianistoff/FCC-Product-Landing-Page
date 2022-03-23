@@ -68,7 +68,7 @@ body {
         .burger,
         .burger::before,
         .burger::after {
-            width: 2em;
+            width: 15px;
             height: 3px;
             background-color: #000;
             transition: transform 350ms ease-in-out, opacity 200ms ease-in-out;

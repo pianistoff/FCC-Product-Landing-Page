@@ -76,7 +76,7 @@ body {
 .header .nav-toggle .burger,
 .header .nav-toggle .burger::before,
 .header .nav-toggle .burger::after {
-  width: 2em;
+  width: 15px;
   height: 3px;
   background-color: #000;
   -webkit-transition: opacity 200ms ease-in-out, -webkit-transform 350ms ease-in-out;
