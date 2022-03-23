@@ -1,9 +1,11 @@
 const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav-link');
 function menuToggle() {
     document.querySelector('.nav').classList.toggle('open-nav');
     navToggle.classList.toggle('open-toggle');
 }
 navToggle.addEventListener('click', menuToggle);
+navLinks.forEach( link => link.addEventListener('click', menuToggle));
 
 function imageSwitchLeft(element) {
     const item = element.parentElement.parentElement;
