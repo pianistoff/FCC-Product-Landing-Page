@@ -79,10 +79,10 @@ body {
   width: 2em;
   height: 3px;
   background-color: #000;
-  -webkit-transition: opacity 200ms linear, -webkit-transform 350ms ease-in-out;
-  transition: opacity 200ms linear, -webkit-transform 350ms ease-in-out;
-  transition: transform 350ms ease-in-out, opacity 200ms linear;
-  transition: transform 350ms ease-in-out, opacity 200ms linear, -webkit-transform 350ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out, -webkit-transform 350ms ease-in-out;
+  transition: opacity 200ms ease-in-out, -webkit-transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out, opacity 200ms ease-in-out;
+  transition: transform 350ms ease-in-out, opacity 200ms ease-in-out, -webkit-transform 350ms ease-in-out;
 }
 
 .header .nav-toggle .burger::before,
@@ -114,7 +114,10 @@ body {
 }
 
 .nav {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 350ms linear;
+  transition: opacity 350ms linear;
 }
 
 .main {
@@ -301,7 +304,8 @@ body {
 }
 
 .open-nav {
-  display: block;
+  position: static;
+  opacity: 1;
 }
 
 .open-toggle .burger {

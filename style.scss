@@ -71,7 +71,7 @@ body {
             width: 2em;
             height: 3px;
             background-color: #000;
-            transition: transform 350ms ease-in-out, opacity 200ms linear;
+            transition: transform 350ms ease-in-out, opacity 200ms ease-in-out;
         }
         .burger::before,
         .burger::after {
@@ -100,7 +100,9 @@ body {
 }
 
 .nav {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 350ms linear;
 }
 
 .main {
@@ -235,7 +237,8 @@ body {
 }
 
 .open-nav {
-    display: block;
+    position: static;
+    opacity: 1;
 }
 
 .open-toggle {
