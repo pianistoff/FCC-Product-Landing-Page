@@ -47,14 +47,18 @@ body {
     width: 100%;
     z-index: 1;
     a.active {
+        height: 95px;
         color: black;
-        padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
         display: block;
         text-align: center;
         background-color: white;
         border-bottom: 2px solid gold;
+        img {
+            padding: 9px;
+            height: 100%;
+        }
     }
     .nav-toggle {
         position: absolute;
