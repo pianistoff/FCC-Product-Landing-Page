@@ -111,10 +111,6 @@ body {
     transition: opacity 350ms linear;
 }
 
-.main {
-    margin-top: 95px;
-}
-
 .item {
     margin: 0 auto;
     width: fit-content;
@@ -177,6 +173,7 @@ body {
 .description {
     margin: 0 auto;
     width: fit-content;
+    padding-top: 95px;
 }
 
 .footer {
