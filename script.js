@@ -62,6 +62,15 @@ function magnifyOn(img) {
     bw = 3;
     w = glass.offsetWidth / 2;
     h = glass.offsetHeight / 2;
+    var x, y;
+    x = img.width / 2;
+    y = img.height / 2;
+    const distanceFromContainer = img.parentElement.getBoundingClientRect().top - img.getBoundingClientRect().top;
+    glass.style.left = x - w + "px";
+    glass.style.top = y - distanceFromContainer - h + "px";
+    glass.style.backgroundPosition =
+    "-" + (x * zoom - w + bw) + "px -" + (y * zoom - h + bw) + "px";
+
 
     /* Execute a function when someone moves the magnifier glass over the image: */
     glass.addEventListener("mousemove", moveMagnifier);
@@ -71,7 +80,7 @@ function magnifyOn(img) {
     glass.addEventListener("touchmove", moveMagnifier);
     img.addEventListener("touchmove", moveMagnifier);
     function moveMagnifier(e) {
-        var pos, x, y;
+        var pos;
         /* Get the cursor's x and y positions: */
         pos = getCursorPos(e);
         x = pos.x;
@@ -90,7 +99,6 @@ function magnifyOn(img) {
             y = h / zoom;
         }
         /* Set the position of the magnifier glass: */
-        const distanceFromContainer = img.parentElement.getBoundingClientRect().top - img.getBoundingClientRect().top;
         glass.style.left = x - w + "px";
         glass.style.top = y - distanceFromContainer - h + "px";
         /* Display what the magnifier glass "sees": */
