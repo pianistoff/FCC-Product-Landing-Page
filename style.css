@@ -326,4 +326,29 @@ body {
   -webkit-transform: rotate(90deg) translate(6px);
           transform: rotate(90deg) translate(6px);
 }
+
+@media (min-width: 962px) {
+  .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .item {
+    width: 500px;
+  }
+  .cannes {
+    margin-left: 0;
+  }
+  .chantaco {
+    margin-right: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

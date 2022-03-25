@@ -256,3 +256,21 @@ body {
         transform: rotate(90deg) translate(6px);
     }
 }
+
+@media (min-width: 962px) {
+    .description {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .item {
+        width: 500px;
+    }
+    .cannes {
+        margin-left: 0;
+    }
+    .chantaco {
+        margin-right: 0;
+    }
+}
