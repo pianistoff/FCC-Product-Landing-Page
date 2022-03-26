@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 95px;
+}
+
 body {
   font-family: 'EB Garamond', serif;
   text-align: justify;
@@ -212,7 +216,6 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding-top: 95px;
 }
 
 .footer {
@@ -325,6 +328,10 @@ body {
 .open-toggle .burger::after {
   -webkit-transform: rotate(90deg) translate(6px);
           transform: rotate(90deg) translate(6px);
+}
+
+.main {
+  margin-top: 95px;
 }
 
 @media (min-width: 962px) {
