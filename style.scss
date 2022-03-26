@@ -285,4 +285,8 @@ body {
         order: 1;
         margin-left: 0;
     }
+    .footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
