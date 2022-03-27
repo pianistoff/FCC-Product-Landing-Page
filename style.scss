@@ -288,5 +288,9 @@ body {
     .footer {
         flex-direction: row-reverse;
         justify-content: space-between;
+        ul,
+        p {
+            padding: 10px;
+        }
     }
 }
