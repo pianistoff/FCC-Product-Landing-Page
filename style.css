@@ -419,5 +419,15 @@ body {
   .nav {
     padding: 10px;
   }
+  .contact form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact form .email {
+    width: 100%;
+    border-right: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
