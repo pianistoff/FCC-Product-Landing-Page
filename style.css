@@ -381,5 +381,43 @@ body {
   .footer p {
     padding: 10px;
   }
+  a.nav-toggle {
+    display: none;
+  }
+  .header a.active {
+    border: none;
+  }
+  .header {
+    border-bottom: 2px solid gold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav {
+    position: static;
+    opacity: 1;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header a.active img {
+    padding: 9px 10px;
+  }
+  .nav {
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

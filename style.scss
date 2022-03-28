@@ -293,4 +293,30 @@ body {
             padding: 10px;
         }
     }
+    a.nav-toggle {
+        display: none;
+    }
+    .header a.active {
+        border: none;
+    }
+    .header {
+        border-bottom: 2px solid gold;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav {
+        position: static;
+        opacity: 1;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .header a.active img {
+        padding: 9px 10px;
+    }
+    .nav {
+        padding: 10px;
+    }
 }
