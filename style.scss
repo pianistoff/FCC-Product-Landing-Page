@@ -333,6 +333,9 @@ body {
     .contact form .email {
         width: 100%;
         border-right: none;
+        border-radius: 10px 0 0 10px;
+        height: 35px;
+        padding: 0 20px;
     }
     .header,
     .footer {
@@ -343,6 +346,16 @@ body {
         margin: 0 300px;
     }
     .contact {
-        margin: 0 400px;
+        margin: 0 425px;
+    }
+    .contact form .btn {
+        border: 2px solid gold;
+        border-radius: 0 10px 10px 0;
+        height: 35px;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+    .contact h2 {
+        margin-bottom: 5px;
     }
 }
