@@ -280,14 +280,19 @@ body {
     .chantaco {
         order: 3;
         margin-right: 0;
+        display: none;
     }
     .cardinal {
         order: 1;
         margin-left: 0;
+        display: none;
     }
     .footer {
         flex-direction: row-reverse;
         justify-content: space-between;
+        border-right: 2px solid gold;
+        border-left: 2px solid gold;
+        border-radius: 10px 10px 0 0;
         ul,
         p {
             padding: 10px;
@@ -301,6 +306,9 @@ body {
     }
     .header {
         border-bottom: 2px solid gold;
+        border-right: 2px solid gold;
+        border-left: 2px solid gold;
+        border-radius: 0 0 10px 10px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -325,5 +333,16 @@ body {
     .contact form .email {
         width: 100%;
         border-right: none;
+    }
+    .header,
+    .footer {
+        margin: 0 100px;
+        width: calc(100% - 200px);
+    }
+    .video {
+        margin: 0 300px;
+    }
+    .contact {
+        margin: 0 400px;
     }
 }
