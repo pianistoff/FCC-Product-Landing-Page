@@ -344,12 +344,13 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .item {
     width: 500px;
+    margin: 0;
   }
   .footer {
     -webkit-box-orient: horizontal;
@@ -441,6 +442,22 @@ body {
   }
   .contact h2 {
     margin-bottom: 5px;
+  }
+  .arrow-resp {
+    width: auto;
+    height: 70px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .arrow-resp path {
+    fill: gold;
+  }
+  .arrow-resp-left {
+    margin-right: 45px;
+  }
+  .arrow-resp-right {
+    margin-left: 45px;
   }
 }
 /*# sourceMappingURL=style.css.map */
