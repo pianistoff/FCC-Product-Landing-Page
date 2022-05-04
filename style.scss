@@ -347,9 +347,11 @@ body {
         margin-bottom: 5px;
     }
     .arrow-resp {
-        width: auto;
-        height: 70px;
         align-self: center;
+        svg {
+            width: auto;
+            height: 70px;
+        }
         path {
             fill: gold;
         }

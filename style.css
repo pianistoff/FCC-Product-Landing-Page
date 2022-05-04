@@ -444,11 +444,13 @@ body {
     margin-bottom: 5px;
   }
   .arrow-resp {
-    width: auto;
-    height: 70px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .arrow-resp svg {
+    width: auto;
+    height: 70px;
   }
   .arrow-resp path {
     fill: gold;
