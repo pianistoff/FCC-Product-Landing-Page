@@ -461,5 +461,8 @@ body {
   .arrow-resp-right {
     margin-left: 45px;
   }
+  .videowrapper {
+    border-radius: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
