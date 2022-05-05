@@ -334,7 +334,7 @@ body {
   margin-top: 95px;
 }
 
-@media (min-width: 962px) {
+@media (min-width: 880px) {
   .description {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -428,10 +428,10 @@ body {
     width: calc(100% - 200px);
   }
   .video {
-    margin: 0 300px;
+    margin: 0 100px;
   }
   .contact {
-    margin: 0 425px;
+    margin: 0 100px;
   }
   .contact form .btn {
     border: 2px solid gold;

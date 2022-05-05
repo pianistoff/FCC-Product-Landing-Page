@@ -33,9 +33,9 @@ function previousProduct() {
     }
 }
 function items() {
-    if (window.matchMedia("(max-width: 961px)").matches) {
+    if (window.matchMedia("(max-width: 879px)").matches) {
         description.innerHTML = cannesString + cardinalString + chantacoString;
-    } else if (window.matchMedia("(min-width: 962px)").matches) {
+    } else if (window.matchMedia("(min-width: 880px)").matches) {
         description.innerHTML = arrowRespLeft + currentString + arrowRespRight;
     }
 }
