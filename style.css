@@ -432,6 +432,7 @@ body {
   }
   .contact {
     margin: 0 100px;
+    padding: 10px 20%;
   }
   .contact form .btn {
     border: 2px solid gold;
