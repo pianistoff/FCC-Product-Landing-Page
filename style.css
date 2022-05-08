@@ -461,5 +461,11 @@ body {
   .videowrapper {
     border-radius: 10px;
   }
+  .year {
+    border-radius: 10px 10px 0 0;
+  }
+  .price {
+    border-radius: 0 0 10px 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
