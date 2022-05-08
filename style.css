@@ -186,12 +186,9 @@ body {
   cursor: pointer;
 }
 
-.item .text-block {
+.item .text-block .description-text {
   border-left: 2px solid gold;
   border-right: 2px solid gold;
-}
-
-.item .text-block .description-text {
   padding: 5px;
 }
 
@@ -199,7 +196,6 @@ body {
 .item .text-block .year {
   background-color: gold;
   text-align: center;
-  border-right: 1px solid gold;
 }
 
 .img-magnifier-glass {

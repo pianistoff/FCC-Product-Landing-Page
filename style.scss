@@ -152,16 +152,15 @@ body {
         }
     }
     .text-block {
-        border-left: 2px solid gold;
-        border-right: 2px solid gold;
         .description-text {
+            border-left: 2px solid gold;
+            border-right: 2px solid gold;
             padding: 5px;
         }
         .price,
         .year {
             background-color: gold;
             text-align: center;
-            border-right: 1px solid gold;
         }
     }
 }
