@@ -467,5 +467,8 @@ body {
   .price {
     border-radius: 0 0 10px 10px;
   }
+  .contact-nav-link {
+    border-radius: 0 0 10px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
