@@ -134,6 +134,7 @@ body {
         .item-image {
             max-height: 400px;
             max-width: 100%;
+            width: auto;
         }
     }
     .buttons {
@@ -269,6 +270,7 @@ body {
         flex-direction: row;
         width: 100%;
         justify-content: center;
+        height: 723px;
     }
     .item {
         width: 500px;
@@ -303,8 +305,6 @@ body {
     .nav {
         position: static;
         opacity: 1;
-    }
-    .nav {
         display: flex;
         flex-direction: row;
     }

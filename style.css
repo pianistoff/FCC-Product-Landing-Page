@@ -163,6 +163,7 @@ body {
 .item .image-container .item-image {
   max-height: 400px;
   max-width: 100%;
+  width: auto;
 }
 
 .item .buttons {
@@ -343,6 +344,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 723px;
   }
   .item {
     width: 500px;
@@ -389,8 +391,6 @@ body {
   .nav {
     position: static;
     opacity: 1;
-  }
-  .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
